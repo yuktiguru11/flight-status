@@ -24,7 +24,15 @@ flightDetails();
 
     return (
         <>
-        TEst
+        {flightData.map((item) => (
+            <div>
+            <li key={item.id}>Flight Number : {item.flightNumber}</li>
+            <li key={item.id}>Airplane: {item.airline}</li>
+            <li key={item.id}>Origin : {item.origin}</li>
+            <li key={item.id}>Destination : {item.destination}</li>
+            </div>
+            
+        ))}
         </>
     )
 }
